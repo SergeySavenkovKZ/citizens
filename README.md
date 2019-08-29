@@ -1,7 +1,12 @@
 # Сitizens
 
-Тестовое задание с использованием Spring Boot REST API
-
+Тестовое задание с использованием:
+```
+Spring Boot 
+REST API
+Swagger
+PostgreSql
+```
 ## 1) Конфигурация PostgreSql:
 
 Создать базу данных и пользователя:
@@ -12,12 +17,12 @@ GRANT ALL ON DATABASE test_database TO test_user;
 ```
 Далее, под пользователем `"test_user"` выполнить команды из файла: 
 ```
-citizens/src/main/java/com/project/citizens/domain/db_script.sql
+/src/main/java/com/project/citizens/domain/db_script.sql
 ```
 
 ## 2) Конфигурация проекта:
 
-Открыть файл `citizens/src/main/resources/application.properties` и настроить следующие параметры:
+Открыть файл `/src/main/resources/application.properties` и настроить следующие параметры:
 ```
 spring.datasource.url=jdbc:postgresql://localhost:5432/test_database
 spring.datasource.username=test_user
@@ -29,7 +34,7 @@ maven package
 ```
 ## 4) Запуск на выполнение:
 ```
-java — jar citizens-0.0.1-SNAPSHOT.jar
+java —jar citizens-0.0.1-SNAPSHOT.jar
 ```
 ## 5) Открыть браузер:
 ```
