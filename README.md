@@ -10,14 +10,14 @@ CREATE DATABASE test_database;
 CREATE USER test_user WITH password 'qwerty';
 GRANT ALL ON DATABASE test_database TO test_user;
 ```
-Далее, под пользователем test_user выполнить команды из файла: 
+Далее, под пользователем `"test_user"` выполнить команды из файла: 
 ```
 citizens/src/main/java/com/project/citizens/domain/db_script.sql
 ```
 
 ## 2) Конфигурация проекта:
 
-Открыть файл citizens/src/main/resources/application.properties и настроить следующие параметры:
+Открыть файл `citizens/src/main/resources/application.properties` и настроить следующие параметры:
 ```
 spring.datasource.url=jdbc:postgresql://localhost:5432/test_database
 spring.datasource.username=test_user
