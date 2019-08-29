@@ -6,9 +6,9 @@
 
 Создать базу данных и пользователя:
 
-CREATE DATABASE test_database;
-CREATE USER test_user WITH password 'qwerty';
-GRANT ALL ON DATABASE test_database TO test_user;
+1. CREATE DATABASE test_database;
+2. CREATE USER test_user WITH password 'qwerty';
+3. GRANT ALL ON DATABASE test_database TO test_user;
 
 Далее, под пользователем test_user выполнить команды из файла: 
 citizens/src/main/java/com/project/citizens/domain/db_script.sql
